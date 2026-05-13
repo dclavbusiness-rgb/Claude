@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trading Dashboard</title>
+  <link rel="stylesheet" href="/static/css/dashboard.css" />
+  <!-- TradingView Lightweight Charts v4 -->
+  <script src="https://unpkg.com/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
+</head>
+<body>
+
+<!-- ── Header ── -->
+<header>
+  <span class="logo">&#9650; TradeDash</span>
+
+  <div class="search-wrapper">
+    <svg class="search-icon" width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zm-5.242 1.156a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/>
+    </svg>
+    <input id="search-input" type="text" placeholder="Search symbol… (e.g. AAPL)" autocomplete="off" />
+    <div id="search-results" class="search-results"></div>
+  </div>
+
+  <div class="interval-bar">
+    <button class="interval-btn" data-interval="1m">1m</button>
+    <button class="interval-btn" data-interval="5m">5m</button>
+    <button class="interval-btn" data-interval="15m">15m</button>
+    <button class="interval-btn" data-interval="1h">1h</button>
+    <button class="interval-btn active" data-interval="1d">1D</button>
+    <button class="interval-btn" data-interval="1wk">1W</button>
+  </div>
+</header>
+
+<!-- ── Layout ── -->
+<div class="layout">
+
+  <!-- Watchlist sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      Watchlist
+    </div>
+    <div id="watchlist" class="watchlist">
+      <!-- populated by JS -->
+      <div style="padding:12px; color: var(--text-muted); font-size:12px;">Loading…</div>
+    </div>
+  </aside>
+
+  <!-- Main chart -->
+  <main class="main">
+    <div class="chart-header">
+      <div>
+        <div id="chart-symbol" class="chart-symbol">—</div>
+      </div>
+      <div class="chart-price-block">
+        <div id="chart-price" class="chart-price">—</div>
+        <div class="chart-change-row">
+          <span id="chart-change">—</span>
+          <span id="chart-change-pct"></span>
+        </div>
+      </div>
+      <div class="chart-ohlc">
+        <div class="ohlc-item">O&nbsp;<span id="ohlc-o">—</span></div>
+        <div class="ohlc-item">H&nbsp;<span id="ohlc-h">—</span></div>
+        <div class="ohlc-item">L&nbsp;<span id="ohlc-l">—</span></div>
+        <div class="ohlc-item">C&nbsp;<span id="ohlc-c">—</span></div>
+        <div class="ohlc-item">V&nbsp;<span id="ohlc-v">—</span></div>
+      </div>
+    </div>
+
+    <div class="chart-container">
+      <div id="tv-chart"></div>
+      <div id="chart-spinner" class="spinner">
+        <div class="spinner-ring"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Right stats panel -->
+  <aside class="right-panel">
+    <div class="panel-section">
+      <div class="panel-title">Quote</div>
+      <div id="stats-panel">
+        <div style="color: var(--text-muted); font-size:12px;">Loading…</div>
+      </div>
+    </div>
+  </aside>
+
+</div>
+
+<div id="toast"></div>
+
+<script src="/static/js/dashboard.js"></script>
+</body>
+</html>
