@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOKO — Employee Benefits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==============================
+       HEADER / NAV
+  ============================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">NOKO</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="#benefits">Benefits</a>
+        <a href="#health">Health</a>
+        <a href="#pto">Time Off</a>
+        <a href="#retirement">401(k)</a>
+        <a href="#perks">Perks</a>
+        <a href="#team">Our Team</a>
+        <a href="#contact" class="nav-cta">Contact HR</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==============================
+       HERO
+  ============================== -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <p class="hero-eyebrow">Employee Benefits Guide</p>
+      <h1 class="hero-title">We take care<br />of our people.</h1>
+      <p class="hero-sub">At NOKO, our team is our greatest ingredient. This guide covers everything you need to know about your benefits — from day one and beyond.</p>
+      <div class="hero-actions">
+        <a href="#benefits" class="btn btn-primary">Explore Benefits</a>
+        <a href="#contact" class="btn btn-ghost">Contact HR</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">↓</div>
+  </section>
+
+  <!-- ==============================
+       BENEFITS OVERVIEW CARDS
+  ============================== -->
+  <section id="benefits" class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">What We Offer</p>
+        <h2>Your Full Benefits Package</h2>
+        <p class="section-sub">Available to all full-time employees (30+ hrs/week). Part-time eligibility noted where applicable.</p>
+      </div>
+      <div class="overview-grid">
+        <a href="#health" class="overview-card">
+          <div class="overview-icon">⚕️</div>
+          <h3>Health & Wellness</h3>
+          <p>Medical, dental, vision, HSA, and mental health coverage.</p>
+        </a>
+        <a href="#pto" class="overview-card">
+          <div class="overview-icon">🌿</div>
+          <h3>Paid Time Off</h3>
+          <p>Vacation, sick leave, holidays, and parental leave.</p>
+        </a>
+        <a href="#retirement" class="overview-card">
+          <div class="overview-icon">📈</div>
+          <h3>401(k) Retirement</h3>
+          <p>Company match, immediate vesting, and financial planning.</p>
+        </a>
+        <a href="#perks" class="overview-card">
+          <div class="overview-icon">✦</div>
+          <h3>Extra Perks</h3>
+          <p>Dining discounts, education, wellness stipends, and more.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       HEALTH INSURANCE
+  ============================== -->
+  <section id="health" class="section section-dark">
+    <div class="container">
+      <div class="section-header section-header-light">
+        <p class="eyebrow eyebrow-light">Coverage</p>
+        <h2>Health & Wellness Benefits</h2>
+        <p class="section-sub">Comprehensive coverage begins on your <strong>first day of employment</strong>. NOKO covers the majority of premiums so you and your family are protected.</p>
+      </div>
+
+      <div class="benefit-grid">
+
+        <div class="benefit-card">
+          <div class="benefit-card-icon">🏥</div>
+          <h3>Medical Insurance</h3>
+          <p class="benefit-provider">BlueCross BlueShield PPO & HDHP plans</p>
+          <ul>
+            <li>NOKO covers <strong>80%</strong> of employee premium</li>
+            <li>NOKO covers <strong>50%</strong> of dependent premiums</li>
+            <li>PPO: $500 individual / $1,000 family deductible</li>
+            <li>HDHP: $1,500 individual / $3,000 family deductible</li>
+            <li>Out-of-pocket max: $4,000 / $8,000</li>
+            <li>Coverage effective <strong>Day 1</strong> of employment</li>
+          </ul>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-card-icon">🦷</div>
+          <h3>Dental Insurance</h3>
+          <p class="benefit-provider">Delta Dental</p>
+          <ul>
+            <li>Preventive care (cleanings, X-rays) at <strong>100%</strong></li>
+            <li>Basic restorative (fillings) at <strong>80%</strong></li>
+            <li>Major restorative (crowns, bridges) at <strong>50%</strong></li>
+            <li>Orthodontia: $1,500 lifetime benefit</li>
+            <li>Annual maximum benefit: $2,000 per person</li>
+            <li>NOKO covers <strong>75%</strong> of premium</li>
+          </ul>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-card-icon">👁️</div>
+          <h3>Vision Insurance</h3>
+          <p class="benefit-provider">VSP Vision Care</p>
+          <ul>
+            <li>Annual eye exam fully covered (in-network)</li>
+            <li><strong>$200</strong> frames/lenses allowance per year</li>
+            <li><strong>$150</strong> contact lens allowance per year</li>
+            <li>15% discount on non-covered frames</li>
+            <li>LASIK discount program available</li>
+            <li>NOKO covers <strong>75%</strong> of premium</li>
+          </ul>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-card-icon">💳</div>
+          <h3>Health Savings Account (HSA)</h3>
+          <p class="benefit-provider">Available with HDHP enrollment — Fidelity HSA</p>
+          <ul>
+            <li>NOKO contributes <strong>$600/year</strong> (individual) or <strong>$1,200/year</strong> (family)</li>
+            <li>2026 IRS contribution limits: $4,300 / $8,550</li>
+            <li>Funds roll over year to year — never lost</li>
+            <li>Triple tax advantage (contribute, grow, spend tax-free)</li>
+            <li>Invest HSA funds once balance exceeds $1,000</li>
+            <li>Portable — yours even if you leave NOKO</li>
+          </ul>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-card-icon">💊</div>
+          <h3>Prescription Drug Coverage</h3>
+          <p class="benefit-provider">Included with all medical plans</p>
+          <ul>
+            <li>Tier 1 generics: <strong>$10</strong> copay</li>
+            <li>Tier 2 preferred brand: <strong>$35</strong> copay</li>
+            <li>Tier 3 non-preferred brand: <strong>$60</strong> copay</li>
+            <li>Tier 4 specialty: <strong>20%</strong> coinsurance</li>
+            <li>90-day mail-order option available</li>
+            <li>Rx out-of-pocket max included in medical max</li>
+          </ul>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-card-icon">🧠</div>
+          <h3>Mental Health & EAP</h3>
+          <p class="benefit-provider">Included with all medical plans + standalone EAP</p>
+          <ul>
+            <li><strong>6 free therapy sessions</strong> per year via EAP</li>
+            <li>Mental health parity — same as medical coverage</li>
+            <li>Free access to <strong>Calm</strong> premium subscription</li>
+            <li>Telehealth mental health visits: $0 copay</li>
+            <li>Substance use treatment covered</li>
+            <li>Confidential — HR never sees usage</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="info-banner">
+        <p>📋 Open enrollment happens each <strong>November</strong> for a January 1 effective date. New hires may enroll within <strong>30 days</strong> of their start date. Questions? Email <a href="mailto:benefits@nokonashville.com">benefits@nokonashville.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       PTO
+  ============================== -->
+  <section id="pto" class="section section-warm">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Rest & Recharge</p>
+        <h2>Paid Time Off Policy</h2>
+        <p class="section-sub">We believe rest makes better work. Take the time you need to show up fully.</p>
+      </div>
+
+      <div class="pto-grid">
+        <div class="pto-card pto-featured">
+          <h3>Vacation / PTO</h3>
+          <div class="pto-tiers">
+            <div class="pto-tier">
+              <span class="pto-days">15</span>
+              <span class="pto-label">days / year<br/><small>Years 1–2</small></span>
+            </div>
+            <div class="pto-tier">
+              <span class="pto-days">18</span>
+              <span class="pto-label">days / year<br/><small>Years 3–5</small></span>
+            </div>
+            <div class="pto-tier">
+              <span class="pto-days">22</span>
+              <span class="pto-label">days / year<br/><small>Years 6+</small></span>
+            </div>
+          </div>
+          <ul class="pto-details">
+            <li>Accrues bi-weekly starting on Day 1</li>
+            <li>Up to <strong>5 days</strong> can roll over annually</li>
+            <li>PTO payout upon separation (where required by law)</li>
+          </ul>
+        </div>
+
+        <div class="pto-card">
+          <div class="pto-icon">🤒</div>
+          <h3>Sick Leave</h3>
+          <p class="pto-amount"><strong>8 days</strong> per year</p>
+          <ul>
+            <li>Separate from PTO — use it without guilt</li>
+            <li>Can be used for family member care</li>
+            <li>Rolls over up to 16 days total</li>
+            <li>No doctor's note required for 3 days or fewer</li>
+          </ul>
+        </div>
+
+        <div class="pto-card">
+          <div class="pto-icon">🎉</div>
+          <h3>Company Holidays</h3>
+          <p class="pto-amount"><strong>11 paid holidays</strong> per year</p>
+          <ul>
+            <li>New Year's Day</li>
+            <li>Martin Luther King Jr. Day</li>
+            <li>Memorial Day, Independence Day, Labor Day</li>
+            <li>Thanksgiving Day + day after</li>
+            <li>Christmas Eve + Christmas Day</li>
+            <li>2 floating holidays (your choice)</li>
+          </ul>
+        </div>
+
+        <div class="pto-card">
+          <div class="pto-icon">👶</div>
+          <h3>Parental Leave</h3>
+          <p class="pto-amount">Up to <strong>12 weeks</strong> paid</p>
+          <ul>
+            <li>Primary caregiver: <strong>12 weeks</strong> fully paid</li>
+            <li>Secondary caregiver: <strong>6 weeks</strong> fully paid</li>
+            <li>Applies to birth, adoption, and foster placement</li>
+            <li>Eligible after 6 months of employment</li>
+            <li>Can be taken within 12 months of birth/placement</li>
+          </ul>
+        </div>
+
+        <div class="pto-card">
+          <div class="pto-icon">🕯️</div>
+          <h3>Bereavement Leave</h3>
+          <p class="pto-amount">Up to <strong>5 days</strong> paid</p>
+          <ul>
+            <li>5 days for immediate family (spouse, child, parent, sibling)</li>
+            <li>3 days for extended family (grandparents, in-laws)</li>
+            <li>Additional unpaid leave available upon request</li>
+          </ul>
+        </div>
+
+        <div class="pto-card">
+          <div class="pto-icon">⚖️</div>
+          <h3>Other Leave</h3>
+          <ul>
+            <li><strong>Jury Duty:</strong> Full pay for up to 10 days</li>
+            <li><strong>Military Leave:</strong> Per USERRA requirements</li>
+            <li><strong>Voting:</strong> 2 hours paid leave on Election Day</li>
+            <li><strong>Volunteer:</strong> 8 hours paid volunteer time per year</li>
+            <li><strong>FMLA:</strong> 12 weeks unpaid per federal law</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       401(k)
+  ============================== -->
+  <section id="retirement" class="section section-dark">
+    <div class="container">
+      <div class="section-header section-header-light">
+        <p class="eyebrow eyebrow-light">Your Future</p>
+        <h2>401(k) Retirement Plan</h2>
+        <p class="section-sub">We invest in your long-term future — because great people deserve great retirements.</p>
+      </div>
+
+      <div class="retirement-layout">
+        <div class="retirement-highlights">
+          <div class="retirement-stat">
+            <span class="stat-number">4%</span>
+            <span class="stat-label">Company match on your contributions</span>
+          </div>
+          <div class="retirement-stat">
+            <span class="stat-number">Day 1</span>
+            <span class="stat-label">Immediate vesting on all company contributions</span>
+          </div>
+          <div class="retirement-stat">
+            <span class="stat-number">90 days</span>
+            <span class="stat-label">Eligibility window after hire date</span>
+          </div>
+        </div>
+
+        <div class="benefit-grid retirement-details-grid">
+          <div class="benefit-card">
+            <div class="benefit-card-icon">🏦</div>
+            <h3>Plan Details</h3>
+            <ul>
+              <li>Traditional (pre-tax) and Roth (post-tax) options</li>
+              <li>Administered by <strong>Fidelity Investments</strong></li>
+              <li>100% match on first <strong>4%</strong> of salary contributed</li>
+              <li>2026 IRS limit: $23,500 / $31,000 (age 50+)</li>
+              <li>Immediate vesting — no waiting period</li>
+              <li>Eligible after <strong>90 days</strong> of employment</li>
+            </ul>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-card-icon">📊</div>
+            <h3>Investment Options</h3>
+            <ul>
+              <li>30+ mutual funds and index funds available</li>
+              <li>Target-date funds for hands-off investing</li>
+              <li>ESG / socially responsible fund options</li>
+              <li>Automatic rebalancing available</li>
+              <li>Self-directed brokerage window (BrokerageLink)</li>
+            </ul>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-card-icon">📚</div>
+            <h3>Financial Wellness</h3>
+            <ul>
+              <li>Free 1:1 sessions with a <strong>Fidelity advisor</strong></li>
+              <li>Online financial planning tools included</li>
+              <li>Retirement readiness score tracker</li>
+              <li>Annual group financial wellness workshops</li>
+              <li>Student loan repayment planning resources</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-banner">
+        <p>💡 <strong>Pro tip:</strong> Contribute at least <strong>4%</strong> to get the full company match — that's free money toward your retirement. Contact Fidelity at <strong>1-800-343-3548</strong> or visit <strong>netbenefits.com</strong> to enroll or update contributions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       EXTRA PERKS
+  ============================== -->
+  <section id="perks" class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">The Extra Mile</p>
+        <h2>Additional Perks</h2>
+        <p class="section-sub">Because the details matter. Here are the extras that make working at NOKO a little more special.</p>
+      </div>
+
+      <div class="perks-grid">
+        <div class="perk-card">
+          <div class="perk-icon">🍜</div>
+          <h3>Dining Discount</h3>
+          <p><strong>30% off</strong> all NOKO menu items for you and up to 3 guests at any time, any day.</p>
+        </div>
+        <div class="perk-card">
+          <div class="perk-icon">🏋️</div>
+          <h3>Wellness Stipend</h3>
+          <p><strong>$75/month</strong> reimbursement for gym memberships, fitness apps, or wellness classes.</p>
+        </div>
+        <div class="perk-card">
+          <div class="perk-icon">📚</div>
+          <h3>Learning & Development</h3>
+          <p><strong>$1,200/year</strong> for courses, certifications, books, or industry conferences.</p>
+        </div>
+        <div class="perk-card">
+          <div class="perk-icon">🚇</div>
+          <h3>Commuter Benefits</h3>
+          <p>Pre-tax commuter benefits for transit and parking up to IRS limits ($315/month in 2026).</p>
+        </div>
+        <div class="perk-card">
+          <div class="perk-icon">👔</div>
+          <h3>Uniform Allowance</h3>
+          <p><strong>$200/year</strong> uniform and workwear allowance, renewed each January.</p>
+        </div>
+        <div class="perk-card">
+          <div class="perk-icon">🎂</div>
+          <h3>Birthday Benefit</h3>
+          <p>Your birthday is a <strong>paid day off</strong> — take it any time in your birthday month.</p>
+        </div>
+        <div class="perk-card">
+          <div class="perk-icon">📱</div>
+          <h3>Phone Stipend</h3>
+          <p>Managers and salaried staff receive a <strong>$50/month</strong> phone/data reimbursement.</p>
+        </div>
+        <div class="perk-card">
+          <div class="perk-icon">🤝</div>
+          <h3>Referral Bonus</h3>
+          <p>Refer a hired employee and earn <strong>$500</strong> after their 90-day review.</p>
+        </div>
+        <div class="perk-card">
+          <div class="perk-icon">🌍</div>
+          <h3>Volunteer Time</h3>
+          <p><strong>8 paid hours</strong> per year to volunteer with any nonprofit or community organization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       TEAM / EMPLOYEE DIRECTORY
+  ============================== -->
+  <section id="team" class="section section-dark">
+    <div class="container">
+      <div class="section-header section-header-light">
+        <p class="eyebrow eyebrow-light">Our People</p>
+        <h2>Team Directory</h2>
+        <p class="section-sub">Search and filter through our NOKO family. New employees are added upon onboarding.</p>
+      </div>
+
+      <div class="directory-controls">
+        <input
+          type="text"
+          id="search-input"
+          class="dir-search"
+          placeholder="Search by name, role, or department…"
+          oninput="filterTeam()"
+          aria-label="Search team members"
+        />
+        <select id="dept-filter" class="dir-filter" onchange="filterTeam()" aria-label="Filter by department">
+          <option value="">All Departments</option>
+          <option value="Front of House">Front of House</option>
+          <option value="Back of House">Back of House</option>
+          <option value="Bar">Bar</option>
+          <option value="Management">Management</option>
+          <option value="Operations">Operations</option>
+          <option value="Events">Events</option>
+        </select>
+        <span id="result-count" class="result-count"></span>
+      </div>
+
+      <div class="team-table-wrap">
+        <table class="team-table" id="team-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Role</th>
+              <th>Department</th>
+              <th>Start Date</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody id="team-tbody">
+            <!-- Populated by team-data.js -->
+          </tbody>
+        </table>
+        <p id="no-results" class="no-results" style="display:none;">No team members match your search.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       CONTACT / HR
+  ============================== -->
+  <section id="contact" class="section section-warm">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">We're Here to Help</p>
+        <h2>Contact HR</h2>
+        <p class="section-sub">Questions about benefits, enrollment, or policies? Our HR team is here for you.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">✉️</div>
+          <h3>Email HR</h3>
+          <p><a href="mailto:benefits@nokonashville.com">benefits@nokonashville.com</a></p>
+          <p class="contact-note">Responses within 1 business day</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📞</div>
+          <h3>Call HR</h3>
+          <p><a href="tel:+16155550100">(615) 555-0100</a></p>
+          <p class="contact-note">Mon–Fri, 9am–5pm CT</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <h3>Visit Us</h3>
+          <p>701 Porter Rd<br />Nashville, TN 37206</p>
+          <p class="contact-note">By appointment only</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">🔗</div>
+          <h3>Quick Links</h3>
+          <ul class="quick-links">
+            <li><a href="#">Employee Handbook (PDF)</a></li>
+            <li><a href="#">Fidelity 401(k) Portal</a></li>
+            <li><a href="#">BlueCross Member Portal</a></li>
+            <li><a href="#">PTO Request Form</a></li>
+            <li><a href="#">Expense Reimbursement Form</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       FOOTER
+  ============================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">NOKO</span>
+        <p>701 Porter Rd, Nashville, TN 37206</p>
+      </div>
+      <div class="footer-links">
+        <a href="#benefits">Benefits</a>
+        <a href="#health">Health</a>
+        <a href="#pto">Time Off</a>
+        <a href="#retirement">401(k)</a>
+        <a href="#perks">Perks</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-legal">Benefits subject to change. See your employee handbook for full plan details and legal summaries. © 2026 NOKO Nashville. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="team-data.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
