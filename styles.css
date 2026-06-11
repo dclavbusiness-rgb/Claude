@@ -73,7 +73,7 @@ ul { list-style: none; }
 .section-photo {
   position: relative;
   color: var(--text-on-dark);
-  background-image: url('images.jpg');
+  background-image: url('food.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -222,7 +222,7 @@ ul { list-style: none; }
 .hero {
   min-height: 100vh;
   background: var(--black);
-  background-image: url('Exterior-Photos-02-23-2.jpg');
+  background-image: url('exterior.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
