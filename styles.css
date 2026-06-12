@@ -69,7 +69,7 @@ ul { list-style: none; }
   background-position: center;
   
 }
-.section-health-photo { background-image: url('additional.jpg'); }
+.section-health-photo { background-image: url('health2.jpg'); }
 .section-pto-photo    { background-image: url('vacation.jpg'); }
 .section-health-photo::before,
 .section-pto-photo::before {
