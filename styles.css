@@ -61,30 +61,30 @@ ul { list-style: none; }
 .section-dark   { background: var(--dark); color: var(--text-on-dark); }
 .section-warm   { background: var(--warm-mid); }
 
-.section-health-photo,
+.section-health-photo {
+  background: var(--warm-dark);
+  color: var(--text-on-dark);
+}
+
 .section-pto-photo {
   position: relative;
   color: var(--text-on-dark);
+  background-image: url('vacation.jpg');
   background-size: cover;
   background-position: center;
 }
 
 @media (min-width: 769px) {
-  .section-health-photo,
   .section-pto-photo {
     background-attachment: fixed;
   }
 }
-.section-health-photo { background-image: url('health2.jpg'); }
-.section-pto-photo    { background-image: url('vacation.jpg'); }
-.section-health-photo::before,
 .section-pto-photo::before {
   content: '';
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.80);
 }
-.section-health-photo .container,
 .section-pto-photo .container { position: relative; }
 
 .section-benefits-photo {
@@ -646,25 +646,9 @@ ul { list-style: none; }
    HOW TO ENROLL
 ============================================== */
 .section-enroll {
-  position: relative;
+  background: var(--warm-dark);
   color: var(--text-on-dark);
-  background-image: url('enroll.jpg');
-  background-size: cover;
-  background-position: center;
 }
-
-@media (min-width: 769px) {
-  .section-enroll {
-    background-attachment: fixed;
-  }
-}
-.section-enroll::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.84);
-}
-.section-enroll .container { position: relative; }
 
 .enroll-steps {
   display: flex;
