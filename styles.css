@@ -439,17 +439,10 @@ ul { list-style: none; }
   border-right: none;
   background: var(--warm-dark);
   border-color: rgba(200,98,26,0.15);
-  display: flex;
-  align-items: center;
-  gap: 48px;
-  padding: 28px 36px;
-  flex-wrap: wrap;
+  text-align: center;
+  padding: 32px 0;
 }
-.pto-featured h3 {
-  color: var(--white);
-  white-space: nowrap;
-  min-width: 120px;
-}
+.pto-featured h3 { color: var(--white); }
 .pto-icon { display: none; }
 .pto-card h3 {
   font-family: var(--font-serif);
@@ -468,14 +461,7 @@ ul { list-style: none; }
   margin-bottom: 14px;
 }
 .pto-card ul { display: flex; flex-direction: column; gap: 7px; }
-.pto-featured ul {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin-left: auto;
-  border-left: 1px solid rgba(200,98,26,0.2);
-  padding-left: 36px;
-}
+.pto-featured ul { display: none; }
 .pto-card li {
   font-size: 14px;
   color: var(--text-mid);
@@ -495,9 +481,10 @@ ul { list-style: none; }
 
 .pto-tiers {
   display: flex;
-  gap: 36px;
-  margin: 0;
-  align-items: center;
+  gap: 48px;
+  margin: 16px 0 0;
+  justify-content: center;
+  align-items: baseline;
 }
 .pto-tier { display: flex; align-items: baseline; gap: 8px; }
 .pto-days {
