@@ -222,13 +222,24 @@ ul { list-style: none; }
   height: 64px;
 }
 .logo {
-  font-family: 'Anton', var(--font-heading);
-  font-size: 24px;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--white);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+.footer-logo-img {
+  height: 40px;
+  width: auto;
+  margin-bottom: 8px;
+}
+.hero-logo-img {
+  height: 100%;
+  width: auto;
+  display: block;
 }
 .site-nav {
   display: flex;
