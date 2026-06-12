@@ -67,7 +67,13 @@ ul { list-style: none; }
   color: var(--text-on-dark);
   background-size: cover;
   background-position: center;
-  
+}
+
+@media (min-width: 769px) {
+  .section-health-photo,
+  .section-pto-photo {
+    background-attachment: fixed;
+  }
 }
 .section-health-photo { background-image: url('health2.jpg'); }
 .section-pto-photo    { background-image: url('vacation.jpg'); }
@@ -87,7 +93,12 @@ ul { list-style: none; }
   background-image: url('mg4690_900xx5689-3200-0-455.jpg');
   background-size: cover;
   background-position: center;
-  
+}
+
+@media (min-width: 769px) {
+  .section-benefits-photo {
+    background-attachment: fixed;
+  }
 }
 .section-benefits-photo::before {
   content: '';
@@ -469,9 +480,8 @@ ul { list-style: none; }
   font-family: var(--font-serif);
   font-size: 19px;
   font-weight: 400;
-  color: var(--white);
   margin-bottom: 8px;
-  color: var(--text-dark);
+  color: var(--accent);
 }
 .pto-featured h3 { color: var(--white); }
 .pto-amount {
@@ -589,7 +599,12 @@ ul { list-style: none; }
   background-image: url('additional.jpg');
   background-size: cover;
   background-position: center;
-  
+}
+
+@media (min-width: 769px) {
+  .section-photo {
+    background-attachment: fixed;
+  }
 }
 .section-photo::before {
   content: '';
@@ -636,7 +651,12 @@ ul { list-style: none; }
   background-image: url('enroll.jpg');
   background-size: cover;
   background-position: center;
-  
+}
+
+@media (min-width: 769px) {
+  .section-enroll {
+    background-attachment: fixed;
+  }
 }
 .section-enroll::before {
   content: '';
