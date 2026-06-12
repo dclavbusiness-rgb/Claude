@@ -682,15 +682,15 @@ ul { list-style: none; }
 }
 .enroll-step:last-child { border-bottom: none; }
 .enroll-number {
-  font-family: var(--font-body);
-  font-weight: 400;
-  font-size: 18px;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 32px;
   color: var(--accent);
   line-height: 1;
-  letter-spacing: 0.12em;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
-  padding-top: 4px;
-  min-width: 28px;
+  padding-top: 2px;
+  min-width: 40px;
 }
 .enroll-content h3 {
   font-family: var(--font-serif);
