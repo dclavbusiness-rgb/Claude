@@ -682,8 +682,8 @@ ul { list-style: none; }
 }
 .enroll-step:last-child { border-bottom: none; }
 .enroll-number {
-  font-family: var(--font-heading);
-  font-weight: 800;
+  font-family: 'Anton', var(--font-heading);
+  font-weight: 400;
   font-size: 32px;
   color: var(--accent);
   line-height: 1;
