@@ -62,9 +62,25 @@ ul { list-style: none; }
 .section-warm   { background: var(--warm-mid); }
 
 .section-health-photo {
-  background: var(--warm-dark);
+  position: relative;
   color: var(--text-on-dark);
+  background-image: url('health2.jpg');
+  background-size: cover;
+  background-position: center;
 }
+
+@media (min-width: 769px) {
+  .section-health-photo {
+    background-attachment: fixed;
+  }
+}
+.section-health-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.80);
+}
+.section-health-photo .container { position: relative; }
 
 .section-pto-photo {
   position: relative;
