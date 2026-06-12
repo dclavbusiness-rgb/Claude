@@ -31,7 +31,7 @@
   --font-body:     'DM Sans', system-ui, sans-serif;
   --font-serif:    'DM Serif Display', Georgia, serif;
 
-  --section-padding: 88px;
+  --section-padding: 72px;
   --container-max:   1160px;
   --radius:          3px;
 }
@@ -66,7 +66,7 @@ ul { list-style: none; }
 ============================================== */
 .section-header {
   max-width: 700px;
-  margin: 0 auto 56px;
+  margin: 0 auto 44px;
   text-align: center;
 }
 .section-header-left {
@@ -299,8 +299,10 @@ ul { list-style: none; }
 ============================================== */
 .overview-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   border: 1px solid var(--rule-light);
+  max-width: 860px;
+  margin: 0 auto;
 }
 .overview-card {
   display: block;
@@ -344,7 +346,7 @@ ul { list-style: none; }
   margin-bottom: 40px;
 }
 .benefit-card {
-  padding: 40px 40px;
+  padding: 32px 36px;
   border-right: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
 }
@@ -421,6 +423,8 @@ ul { list-style: none; }
   border-right: none;
   background: var(--warm-dark);
   border-color: rgba(200,98,26,0.15);
+  text-align: center;
+  padding: 36px 48px;
 }
 .pto-icon { display: none; }
 .pto-card h3 {
@@ -440,6 +444,13 @@ ul { list-style: none; }
   margin-bottom: 14px;
 }
 .pto-card ul { display: flex; flex-direction: column; gap: 7px; }
+.pto-featured ul {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  margin: 0 auto;
+}
 .pto-card li {
   font-size: 14px;
   color: var(--text-mid);
@@ -460,7 +471,8 @@ ul { list-style: none; }
 .pto-tiers {
   display: flex;
   gap: 48px;
-  margin: 16px 0 24px;
+  margin: 16px 0 20px;
+  justify-content: center;
 }
 .pto-tier { display: flex; align-items: baseline; gap: 8px; }
 .pto-days {
@@ -581,9 +593,9 @@ ul { list-style: none; }
 }
 .enroll-step {
   display: grid;
-  grid-template-columns: 80px 1fr;
-  gap: 32px;
-  padding: 36px 40px;
+  grid-template-columns: 64px 1fr;
+  gap: 28px;
+  padding: 28px 36px;
   border-bottom: 1px solid var(--rule);
   align-items: start;
 }
@@ -640,7 +652,7 @@ ul { list-style: none; }
   border: 1px solid var(--rule-light);
 }
 .contact-card {
-  padding: 36px 28px;
+  padding: 32px 24px;
   border-right: 1px solid var(--rule-light);
 }
 .contact-card:last-child { border-right: none; }
