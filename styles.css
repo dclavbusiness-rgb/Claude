@@ -633,7 +633,7 @@ ul { list-style: none; }
 .section-enroll {
   position: relative;
   color: var(--text-on-dark);
-  background-image: url('exterior.jpg');
+  background-image: url('How to enroll.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
