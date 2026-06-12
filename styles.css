@@ -67,7 +67,7 @@ ul { list-style: none; }
   color: var(--text-on-dark);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  
 }
 .section-health-photo { background-image: url('health.jpg'); }
 .section-pto-photo    { background-image: url('vacation.jpg'); }
@@ -87,7 +87,7 @@ ul { list-style: none; }
   background-image: url('mg4690_900xx5689-3200-0-455.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  
 }
 .section-benefits-photo::before {
   content: '';
@@ -589,7 +589,7 @@ ul { list-style: none; }
   background-image: url('additional.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  
 }
 .section-photo::before {
   content: '';
@@ -633,10 +633,10 @@ ul { list-style: none; }
 .section-enroll {
   position: relative;
   color: var(--text-on-dark);
-  background-image: url('How to enroll.jpg');
+  background-image: url('enroll.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  
 }
 .section-enroll::before {
   content: '';
