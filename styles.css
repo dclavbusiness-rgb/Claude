@@ -222,10 +222,10 @@ ul { list-style: none; }
   height: 64px;
 }
 .logo {
-  font-family: var(--font-heading);
+  font-family: 'Anton', var(--font-heading);
   font-size: 24px;
-  font-weight: 900;
-  letter-spacing: 0.12em;
+  font-weight: 400;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--white);
   text-decoration: none;
@@ -303,10 +303,10 @@ ul { list-style: none; }
   display: inline-block;
   background: var(--white);
   color: var(--black);
-  font-family: var(--font-heading);
-  font-weight: 900;
+  font-family: 'Anton', var(--font-heading);
+  font-weight: 400;
   font-size: clamp(40px, 7vw, 72px);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   line-height: 1;
   padding: 12px 18px 8px;
