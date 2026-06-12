@@ -183,7 +183,7 @@ ul { list-style: none; }
   display: inline-block;
   padding: 13px 28px;
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -501,7 +501,7 @@ ul { list-style: none; }
 }
 .pto-featured h3 { color: var(--white); }
 .pto-amount {
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -570,7 +570,7 @@ ul { list-style: none; }
   font-style: normal;
 }
 .pto-label {
-  font-size: 13px;
+  font-size: 18px;
   color: var(--text-muted-dark);
   line-height: 1.4;
 }
@@ -600,7 +600,7 @@ ul { list-style: none; }
   line-height: 1;
 }
 .stat-label {
-  font-size: 13px;
+  font-size: 18px;
   color: var(--text-muted-dark);
   line-height: 1.5;
 }
@@ -684,7 +684,7 @@ ul { list-style: none; }
 .enroll-number {
   font-family: var(--font-body);
   font-weight: 400;
-  font-size: 13px;
+  font-size: 18px;
   color: var(--accent);
   line-height: 1;
   letter-spacing: 0.12em;
