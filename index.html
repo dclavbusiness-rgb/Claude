@@ -26,7 +26,7 @@
         <a href="#pto">Time Off</a>
         <a href="#retirement">401(k)</a>
         <a href="#perks">Perks</a>
-        <a href="#team">Our Team</a>
+        <a href="#enroll">How to Enroll</a>
         <a href="#contact" class="nav-cta">Contact HR</a>
       </nav>
     </div>
@@ -422,53 +422,53 @@
   </section>
 
   <!-- ==============================
-       TEAM / EMPLOYEE DIRECTORY
+       HOW TO ENROLL
   ============================== -->
-  <section id="team" class="section section-dark">
+  <section id="enroll" class="section section-enroll">
     <div class="container">
       <div class="section-header section-header-light">
-        <p class="eyebrow eyebrow-light">Our People</p>
-        <h2>Team Directory</h2>
-        <p class="section-sub">Search and filter through our NOKO family. New employees are added upon onboarding.</p>
+        <p class="eyebrow eyebrow-light">Get Started</p>
+        <h2>How to Enroll</h2>
+        <p class="section-sub">Everything you need is in one of these three platforms. New hires must complete enrollment within 30 days of their start date.</p>
       </div>
 
-      <div class="directory-controls">
-        <input
-          type="text"
-          id="search-input"
-          class="dir-search"
-          placeholder="Search by name, role, or department…"
-          oninput="filterTeam()"
-          aria-label="Search team members"
-        />
-        <select id="dept-filter" class="dir-filter" onchange="filterTeam()" aria-label="Filter by department">
-          <option value="">All Departments</option>
-          <option value="Front of House">Front of House</option>
-          <option value="Back of House">Back of House</option>
-          <option value="Bar">Bar</option>
-          <option value="Management">Management</option>
-          <option value="Operations">Operations</option>
-          <option value="Events">Events</option>
-        </select>
-        <span id="result-count" class="result-count"></span>
+      <div class="enroll-steps">
+        <div class="enroll-step">
+          <div class="enroll-number">01</div>
+          <div class="enroll-content">
+            <h3>Set Up Your Schedule</h3>
+            <p>View your shifts, request time off, and manage availability through Schedulefly. All hourly team members use this for scheduling.</p>
+            <a href="https://www.schedulefly.com" target="_blank" rel="noopener" class="enroll-link">
+              Go to Schedulefly →
+            </a>
+          </div>
+        </div>
+
+        <div class="enroll-step">
+          <div class="enroll-number">02</div>
+          <div class="enroll-content">
+            <h3>Payroll & Tips via Toast</h3>
+            <p>Access your pay stubs, tip reports, and payroll information through Toast Payroll. Download the Toast app to access your info on the go.</p>
+            <a href="https://www.toasttab.com" target="_blank" rel="noopener" class="enroll-link">
+              Go to Toast →
+            </a>
+          </div>
+        </div>
+
+        <div class="enroll-step">
+          <div class="enroll-number">03</div>
+          <div class="enroll-content">
+            <h3>Enroll in Benefits</h3>
+            <p>Sign up for health, dental, vision, HSA, and 401(k) through Employee Navigator. This is where you make all your benefits elections during open enrollment or as a new hire.</p>
+            <a href="https://www.employeenavigator.com" target="_blank" rel="noopener" class="enroll-link">
+              Go to Employee Navigator →
+            </a>
+          </div>
+        </div>
       </div>
 
-      <div class="team-table-wrap">
-        <table class="team-table" id="team-table">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Role</th>
-              <th>Department</th>
-              <th>Start Date</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-          <tbody id="team-tbody">
-            <!-- Populated by team-data.js -->
-          </tbody>
-        </table>
-        <p id="no-results" class="no-results" style="display:none;">No team members match your search.</p>
+      <div class="enroll-note">
+        <p>🆕 <strong>New hire?</strong> HR will send you login credentials for all three platforms within your first week. Questions? Email <a href="mailto:benefits@nokobenefits.com">benefits@nokobenefits.com</a></p>
       </div>
     </div>
   </section>

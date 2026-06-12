@@ -691,6 +691,102 @@ ul { list-style: none; }
 .quick-links a:hover { text-decoration: underline; }
 
 /* ==============================================
+   HOW TO ENROLL
+============================================== */
+.section-enroll {
+  position: relative;
+  color: var(--text-on-dark);
+  background-image: url('noko 2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.section-enroll::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.82);
+}
+.section-enroll .container { position: relative; }
+
+.enroll-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 40px;
+  border: 1px solid rgba(200,98,26,0.2);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.enroll-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 40px 48px;
+  background: rgba(15,10,5,0.6);
+  border-bottom: 1px solid rgba(200,98,26,0.15);
+  transition: background 0.2s;
+}
+.enroll-step:last-child { border-bottom: none; }
+.enroll-step:hover { background: rgba(30,15,5,0.75); }
+
+.enroll-number {
+  font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  color: var(--accent);
+  line-height: 1;
+  min-width: 80px;
+  opacity: 0.85;
+}
+.enroll-content { flex: 1; }
+.enroll-content h3 {
+  font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+.enroll-content p {
+  font-size: 15px;
+  color: var(--text-muted-dark);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+.enroll-link {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-light);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(232,137,90,0.35);
+  padding-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.enroll-link:hover { color: var(--white); border-color: var(--white); }
+
+.enroll-note {
+  background: rgba(200,98,26,0.08);
+  border: 1px solid rgba(200,98,26,0.25);
+  border-radius: var(--radius);
+  padding: 20px 28px;
+  font-size: 14.5px;
+  color: var(--text-muted-dark);
+  line-height: 1.6;
+}
+.enroll-note a { color: var(--accent-light); text-decoration: underline; }
+.enroll-note strong { color: var(--accent-light); }
+
+@media (max-width: 600px) {
+  .enroll-step { flex-direction: column; gap: 12px; padding: 28px 24px; }
+  .enroll-number { font-size: 44px; min-width: unset; }
+}
+
+/* ==============================================
    FOOTER
 ============================================== */
 .site-footer {
