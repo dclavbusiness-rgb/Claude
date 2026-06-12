@@ -6,7 +6,7 @@
   <title>NokoBenefits.com — Employee Benefits</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -24,9 +24,8 @@
         <a href="#benefits">Benefits</a>
         <a href="#health">Health</a>
         <a href="#pto">Time Off</a>
-        <a href="#retirement">401(k)</a>
         <a href="#perks">Perks</a>
-        <a href="#team">Our Team</a>
+        <a href="#enroll">How to Enroll</a>
         <a href="#contact" class="nav-cta">Contact HR</a>
       </nav>
     </div>
@@ -37,6 +36,7 @@
   ============================== -->
   <section id="home" class="hero">
     <div class="container hero-inner">
+      <div class="hero-logo-block">NOKO</div>
       <p class="hero-eyebrow">Employee Benefits Guide</p>
       <h1 class="hero-title">We take care<br />of our people.</h1>
       <p class="hero-sub">At NOKO, our team is our greatest ingredient. This guide covers everything you need to know about your benefits — from day one and beyond.</p>
@@ -51,10 +51,11 @@
   <!-- ==============================
        BENEFITS OVERVIEW CARDS
   ============================== -->
-  <section id="benefits" class="section section-light">
+  <section id="benefits" class="section section-benefits-photo">
     <div class="container">
-      <div class="section-header">
-        <p class="eyebrow">What We Offer</p>
+      <div class="section-header section-header-light">
+        <p class="eyebrow eyebrow-light">What We Offer</p>
+        <div class="section-rule"></div>
         <h2>Your Full Benefits Package</h2>
         <p class="section-sub">Available to all full-time employees (30+ hrs/week). Part-time eligibility noted where applicable.</p>
       </div>
@@ -69,11 +70,6 @@
           <h3>Paid Time Off</h3>
           <p>Vacation, sick leave, holidays, and parental leave.</p>
         </a>
-        <a href="#retirement" class="overview-card">
-          <div class="overview-icon">📈</div>
-          <h3>401(k) Retirement</h3>
-          <p>Company match, immediate vesting, and financial planning.</p>
-        </a>
         <a href="#perks" class="overview-card">
           <div class="overview-icon">✦</div>
           <h3>Extra Perks</h3>
@@ -86,10 +82,11 @@
   <!-- ==============================
        HEALTH INSURANCE
   ============================== -->
-  <section id="health" class="section section-dark">
+  <section id="health" class="section section-health-photo">
     <div class="container">
       <div class="section-header section-header-light">
         <p class="eyebrow eyebrow-light">Coverage</p>
+        <div class="section-rule"></div>
         <h2>Health & Wellness Benefits</h2>
         <p class="section-sub">Comprehensive coverage begins on your <strong>first day of employment</strong>. NOKO covers the majority of premiums so you and your family are protected.</p>
       </div>
@@ -191,38 +188,16 @@
   <!-- ==============================
        PTO
   ============================== -->
-  <section id="pto" class="section section-warm">
+  <section id="pto" class="section section-pto-photo">
     <div class="container">
-      <div class="section-header">
-        <p class="eyebrow">Rest & Recharge</p>
+      <div class="section-header section-header-light">
+        <p class="eyebrow eyebrow-light">Rest & Recharge</p>
+        <div class="section-rule"></div>
         <h2>Paid Time Off Policy</h2>
         <p class="section-sub">We believe rest makes better work. Take the time you need to show up fully.</p>
       </div>
 
       <div class="pto-grid">
-        <div class="pto-card pto-featured">
-          <h3>Vacation / PTO</h3>
-          <div class="pto-tiers">
-            <div class="pto-tier">
-              <span class="pto-days">15</span>
-              <span class="pto-label">days / year<br/><small>Years 1–2</small></span>
-            </div>
-            <div class="pto-tier">
-              <span class="pto-days">18</span>
-              <span class="pto-label">days / year<br/><small>Years 3–5</small></span>
-            </div>
-            <div class="pto-tier">
-              <span class="pto-days">22</span>
-              <span class="pto-label">days / year<br/><small>Years 6+</small></span>
-            </div>
-          </div>
-          <ul class="pto-details">
-            <li>Accrues bi-weekly starting on Day 1</li>
-            <li>Up to <strong>5 days</strong> can roll over annually</li>
-            <li>PTO payout upon separation (where required by law)</li>
-          </ul>
-        </div>
-
         <div class="pto-card">
           <div class="pto-icon">🤒</div>
           <h3>Sick Leave</h3>
@@ -262,99 +237,6 @@
           </ul>
         </div>
 
-        <div class="pto-card">
-          <div class="pto-icon">🕯️</div>
-          <h3>Bereavement Leave</h3>
-          <p class="pto-amount">Up to <strong>5 days</strong> paid</p>
-          <ul>
-            <li>5 days for immediate family (spouse, child, parent, sibling)</li>
-            <li>3 days for extended family (grandparents, in-laws)</li>
-            <li>Additional unpaid leave available upon request</li>
-          </ul>
-        </div>
-
-        <div class="pto-card">
-          <div class="pto-icon">⚖️</div>
-          <h3>Other Leave</h3>
-          <ul>
-            <li><strong>Jury Duty:</strong> Full pay for up to 10 days</li>
-            <li><strong>Military Leave:</strong> Per USERRA requirements</li>
-            <li><strong>Voting:</strong> 2 hours paid leave on Election Day</li>
-            <li><strong>Volunteer:</strong> 8 hours paid volunteer time per year</li>
-            <li><strong>FMLA:</strong> 12 weeks unpaid per federal law</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==============================
-       401(k)
-  ============================== -->
-  <section id="retirement" class="section section-dark">
-    <div class="container">
-      <div class="section-header section-header-light">
-        <p class="eyebrow eyebrow-light">Your Future</p>
-        <h2>401(k) Retirement Plan</h2>
-        <p class="section-sub">We invest in your long-term future — because great people deserve great retirements.</p>
-      </div>
-
-      <div class="retirement-layout">
-        <div class="retirement-highlights">
-          <div class="retirement-stat">
-            <span class="stat-number">4%</span>
-            <span class="stat-label">Company match on your contributions</span>
-          </div>
-          <div class="retirement-stat">
-            <span class="stat-number">Day 1</span>
-            <span class="stat-label">Immediate vesting on all company contributions</span>
-          </div>
-          <div class="retirement-stat">
-            <span class="stat-number">90 days</span>
-            <span class="stat-label">Eligibility window after hire date</span>
-          </div>
-        </div>
-
-        <div class="benefit-grid retirement-details-grid">
-          <div class="benefit-card">
-            <div class="benefit-card-icon">🏦</div>
-            <h3>Plan Details</h3>
-            <ul>
-              <li>Traditional (pre-tax) and Roth (post-tax) options</li>
-              <li>Administered by <strong>Fidelity Investments</strong></li>
-              <li>100% match on first <strong>4%</strong> of salary contributed</li>
-              <li>2026 IRS limit: $23,500 / $31,000 (age 50+)</li>
-              <li>Immediate vesting — no waiting period</li>
-              <li>Eligible after <strong>90 days</strong> of employment</li>
-            </ul>
-          </div>
-          <div class="benefit-card">
-            <div class="benefit-card-icon">📊</div>
-            <h3>Investment Options</h3>
-            <ul>
-              <li>30+ mutual funds and index funds available</li>
-              <li>Target-date funds for hands-off investing</li>
-              <li>ESG / socially responsible fund options</li>
-              <li>Automatic rebalancing available</li>
-              <li>Self-directed brokerage window (BrokerageLink)</li>
-            </ul>
-          </div>
-          <div class="benefit-card">
-            <div class="benefit-card-icon">📚</div>
-            <h3>Financial Wellness</h3>
-            <ul>
-              <li>Free 1:1 sessions with a <strong>Fidelity advisor</strong></li>
-              <li>Online financial planning tools included</li>
-              <li>Retirement readiness score tracker</li>
-              <li>Annual group financial wellness workshops</li>
-              <li>Student loan repayment planning resources</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="info-banner">
-        <p>💡 <strong>Pro tip:</strong> Contribute at least <strong>4%</strong> to get the full company match — that's free money toward your retirement. Contact Fidelity at <strong>1-800-343-3548</strong> or visit <strong>netbenefits.com</strong> to enroll or update contributions.</p>
       </div>
     </div>
   </section>
@@ -362,10 +244,11 @@
   <!-- ==============================
        EXTRA PERKS
   ============================== -->
-  <section id="perks" class="section section-light">
+  <section id="perks" class="section section-photo">
     <div class="container">
-      <div class="section-header">
-        <p class="eyebrow">The Extra Mile</p>
+      <div class="section-header section-header-light">
+        <p class="eyebrow eyebrow-light">The Extra Mile</p>
+        <div class="section-rule"></div>
         <h2>Additional Perks</h2>
         <p class="section-sub">Because the details matter. Here are the extras that make working at NOKO a little more special.</p>
       </div>
@@ -421,53 +304,75 @@
   </section>
 
   <!-- ==============================
-       TEAM / EMPLOYEE DIRECTORY
+       HOW TO ENROLL
   ============================== -->
-  <section id="team" class="section section-dark">
+  <section id="enroll" class="section section-enroll">
     <div class="container">
       <div class="section-header section-header-light">
-        <p class="eyebrow eyebrow-light">Our People</p>
-        <h2>Team Directory</h2>
-        <p class="section-sub">Search and filter through our NOKO family. New employees are added upon onboarding.</p>
+        <p class="eyebrow eyebrow-light">Get Started</p>
+        <div class="section-rule"></div>
+        <h2>How to Enroll</h2>
+        <p class="section-sub">Everything you need is across these five platforms. New hires must complete enrollment within 30 days of their start date.</p>
       </div>
 
-      <div class="directory-controls">
-        <input
-          type="text"
-          id="search-input"
-          class="dir-search"
-          placeholder="Search by name, role, or department…"
-          oninput="filterTeam()"
-          aria-label="Search team members"
-        />
-        <select id="dept-filter" class="dir-filter" onchange="filterTeam()" aria-label="Filter by department">
-          <option value="">All Departments</option>
-          <option value="Front of House">Front of House</option>
-          <option value="Back of House">Back of House</option>
-          <option value="Bar">Bar</option>
-          <option value="Management">Management</option>
-          <option value="Operations">Operations</option>
-          <option value="Events">Events</option>
-        </select>
-        <span id="result-count" class="result-count"></span>
+      <div class="enroll-steps">
+        <div class="enroll-step">
+          <div class="enroll-number">01</div>
+          <div class="enroll-content">
+            <h3>Set Up Your Schedule</h3>
+            <p>View your shifts, request time off, and manage availability through Schedulefly. All hourly team members use this for scheduling.</p>
+            <a href="https://www.schedulefly.com" target="_blank" rel="noopener" class="enroll-link">
+              Go to Schedulefly →
+            </a>
+          </div>
+        </div>
+
+        <div class="enroll-step">
+          <div class="enroll-number">02</div>
+          <div class="enroll-content">
+            <h3>Payroll & Tips via Toast</h3>
+            <p>Access your pay stubs, tip reports, and payroll information through Toast Payroll. Download the Toast app to access your info on the go.</p>
+            <a href="https://www.toasttab.com" target="_blank" rel="noopener" class="enroll-link">
+              Go to Toast →
+            </a>
+          </div>
+        </div>
+
+        <div class="enroll-step">
+          <div class="enroll-number">03</div>
+          <div class="enroll-content">
+            <h3>Enroll in Benefits</h3>
+            <p>Sign up for health, dental, vision, and HSA through Employee Navigator. This is where you make all your benefits elections during open enrollment or as a new hire.</p>
+            <a href="https://www.employeenavigator.com/identity/Account/Login?ReturnUrl=%2Fidentity%2Fconnect%2Fauthorize%2Fcallback%3FauthzId%3DF85E530762838FB880C4853B6EF2E0CE0F53A431371728C38BFF9FEA0D99EBF4" target="_blank" rel="noopener" class="enroll-link">
+              Go to Employee Navigator →
+            </a>
+          </div>
+        </div>
+        <div class="enroll-step">
+          <div class="enroll-number">04</div>
+          <div class="enroll-content">
+            <h3>Telehealth via HealthiestYou</h3>
+            <p>Access 24/7 virtual doctor visits, mental health support, and prescription discounts through HealthiestYou — included with your benefits at no extra cost.</p>
+            <a href="https://www.healthiestyou.com" target="_blank" rel="noopener" class="enroll-link">
+              Go to HealthiestYou →
+            </a>
+          </div>
+        </div>
+
+        <div class="enroll-step">
+          <div class="enroll-number">05</div>
+          <div class="enroll-content">
+            <h3>Gym & Fitness via Gym5</h3>
+            <p>Sign up for your wellness benefit through Gym5. Get access to gym memberships, fitness classes, and wellness programs as part of your NOKO perks.</p>
+            <a href="https://www.gym5.com" target="_blank" rel="noopener" class="enroll-link">
+              Go to Gym5 →
+            </a>
+          </div>
+        </div>
       </div>
 
-      <div class="team-table-wrap">
-        <table class="team-table" id="team-table">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Role</th>
-              <th>Department</th>
-              <th>Start Date</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-          <tbody id="team-tbody">
-            <!-- Populated by team-data.js -->
-          </tbody>
-        </table>
-        <p id="no-results" class="no-results" style="display:none;">No team members match your search.</p>
+      <div class="enroll-note">
+        <p>🆕 <strong>New hire?</strong> HR will send you login credentials for all platforms within your first week. Questions? Email <a href="mailto:benefits@nokobenefits.com">benefits@nokobenefits.com</a></p>
       </div>
     </div>
   </section>
@@ -479,6 +384,7 @@
     <div class="container">
       <div class="section-header">
         <p class="eyebrow">We're Here to Help</p>
+        <div class="section-rule"></div>
         <h2>Contact HR</h2>
         <p class="section-sub">Questions about benefits, enrollment, or policies? Our HR team is here for you.</p>
       </div>
@@ -507,8 +413,7 @@
           <h3>Quick Links</h3>
           <ul class="quick-links">
             <li><a href="#">Employee Handbook (PDF)</a></li>
-            <li><a href="#">Fidelity 401(k) Portal</a></li>
-            <li><a href="#">BlueCross Member Portal</a></li>
+<li><a href="#">BlueCross Member Portal</a></li>
             <li><a href="#">PTO Request Form</a></li>
             <li><a href="#">Expense Reimbursement Form</a></li>
           </ul>
@@ -530,7 +435,6 @@
         <a href="#benefits">Benefits</a>
         <a href="#health">Health</a>
         <a href="#pto">Time Off</a>
-        <a href="#retirement">401(k)</a>
         <a href="#perks">Perks</a>
         <a href="#team">Team</a>
         <a href="#contact">Contact</a>
